@@ -1,0 +1,13 @@
+{
+  "name": "northstar-live-paper",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local live-market and client-side paper-trading prototype",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

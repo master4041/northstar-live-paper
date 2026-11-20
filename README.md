@@ -1,5 +1,11 @@
 # Northstar Live Paper Desk
 
+## GitHub Pages preview
+
+The public GitHub Pages site is a static preview of the Northstar interface. It includes browser-local planning tools and does not request, display, or redistribute Kite market data. To enable live quotes for a personal session, run the Node server locally using the setup steps below. GitHub Pages cannot run the Node server or protect broker credentials for a public feed.
+
+For this repository, configure GitHub Pages to deploy from branch `main`, folder `/public`.
+
 Northstar now separates **live market data** from **paper trading**:
 
 - Kite Connect supplies live quotes and historical candles after you sign in.

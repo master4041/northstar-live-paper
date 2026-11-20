@@ -35,3 +35,14 @@ test('GitHub Pages uses relative assets and never starts the live Kite API feed'
   assert.match(script, /GitHub Pages is static/);
 });
 
+test('GitHub Pages docs export stays byte-for-byte aligned with the local app', () => {
+  const project = path.join(__dirname, '..');
+  for (const file of ['index.html', 'paper.mjs']) {
+    assert.deepEqual(
+      fs.readFileSync(path.join(project, 'docs', file)),
+      fs.readFileSync(path.join(project, 'public', file)),
+      `docs/${file} must match the app served locally`
+    );
+  }
+});
+

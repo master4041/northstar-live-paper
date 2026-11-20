@@ -33,6 +33,9 @@ test('GitHub Pages uses relative assets and never starts the live Kite API feed'
   assert.match(script, /function connectStream\(\)\{if\(isPagesHost\)return;/);
   assert.match(script, /STATIC PREVIEW · NO LIVE FEED/);
   assert.match(script, /GitHub Pages is static/);
+  assert.match(script, /Northstar — Investing workspace preview/);
+  assert.match(script, /Market data is unavailable on this public preview/);
+  assert.match(script, /Live data requires the local server/);
 });
 
 test('GitHub Pages docs export stays byte-for-byte aligned with the local app', () => {
